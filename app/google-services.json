@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1066950280550",
+    "firebase_url": "https://gainey-27c1d.firebaseio.com",
+    "project_id": "gainey-27c1d",
+    "storage_bucket": "gainey-27c1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066950280550:android:96e8e31a6f41b4da",
+        "android_client_info": {
+          "package_name": "com.example.subhamdhakal.eavesdrop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066950280550-u0ept13q5ucgdk9k9as8tc5g1ivm28uj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.subhamdhakal.eavesdrop",
+            "certificate_hash": "010606a7e10b2e0f54fddda2d27b95f29cf8b26e"
+          }
+        },
+        {
+          "client_id": "1066950280550-li5ghbq4n1650b0b37055shc9321e8go.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5mQnJwHQMuDpOUbrL5zsRKvu0wxchSbE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066950280550-li5ghbq4n1650b0b37055shc9321e8go.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
