@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,24 +8,23 @@
 
 
     <EditText
-        android:layout_marginTop="20dp"
         android:id="@+id/editTextName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
         android:layout_marginBottom="20dp"
-        android:hint="Enter the name of song" />
-
+        android:layout_marginTop="20dp"
+        android:hint="Enter the name of song"
+        android:textSize="30dp" />
 
 
     <EditText
-        android:layout_marginTop="20dp"
         android:id="@+id/editTextArtist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
         android:layout_marginBottom="20dp"
-        android:hint="Enter the name of Artist" />
+        android:layout_marginTop="20dp"
+        android:hint="Enter the name of Artist"
+        android:textSize="30dp" />
 
     <Spinner
         android:id="@+id/spinnerGeneres"
@@ -34,6 +32,13 @@
 
         android:layout_height="40dp"
         android:scrollbarSize="30dp" />
+
+    <TextView
+        android:id="@+id/sizeView"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/recordButton"
@@ -44,11 +49,10 @@
 
     <Button
         android:id="@+id/storeButton"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Store" />
-
 
 
 </LinearLayout>
