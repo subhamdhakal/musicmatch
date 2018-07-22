@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ui.activity.MainActivity">
 
 
     <EditText
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
-        android:hint="Enter the name of song"
+        android:hint="Enter the name of storeData"
         android:textSize="30dp" />
 
 
