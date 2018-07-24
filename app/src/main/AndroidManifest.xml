@@ -21,7 +21,7 @@
         <activity android:name=".ui.activity.fetchsong" />
         <activity
             android:name=".ui.activity.LoginActivity"
-            android:label="@string/title_activity_login"
+            android:label="MusicMatch"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

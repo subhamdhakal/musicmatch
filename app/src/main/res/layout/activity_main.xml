@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,7 +15,8 @@
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
         android:hint="Enter the name of storeData"
-        android:textSize="30dp" />
+        android:textSize="30dp"
+        android:visibility="gone"/>
 
 
     <EditText
@@ -24,35 +26,101 @@
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
         android:hint="Enter the name of Artist"
+        android:visibility="gone"
         android:textSize="30dp" />
 
     <Spinner
         android:id="@+id/spinnerGeneres"
         android:layout_width="match_parent"
-
+        android:visibility="gone"
         android:layout_height="40dp"
         android:scrollbarSize="30dp" />
 
     <TextView
         android:id="@+id/sizeView"
         android:paddingTop="10dp"
+        android:visibility="gone"
         android:paddingBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/recordButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Record" />
+
 
     <Button
-        android:id="@+id/storeButton"
-        android:layout_width="match_parent"
+        android:id="@+id/button_data_added"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Store" />
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:text="added" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraint_layout_with_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Chronometer
+            android:id="@+id/chronometer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="32dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/recordButton1"
+            app:layout_constraintStart_toEndOf="@+id/imageView_record"
+            app:layout_constraintTop_toBottomOf="@+id/recordButton1" />
+
+        <Button
+            android:id="@+id/recordButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/piss_yellow_background"
+            android:text="Record"
+            app:layout_constraintStart_toEndOf="@+id/imageView_record"
+            app:layout_constraintTop_toTopOf="@+id/imageView_record" />
+
+        <Button
+            android:id="@+id/storeButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/piss_yellow_background"
+            android:text="Store"
+            app:layout_constraintStart_toEndOf="@+id/imageView_done"
+            app:layout_constraintTop_toTopOf="@+id/imageView_done" />
+
+        <ImageView
+            android:id="@+id/imageView_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView_record"
+            app:layout_constraintStart_toStartOf="@+id/imageView_record"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_record"
+            app:srcCompat="@drawable/ic_done_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="150dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_mic_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+    </android.support.constraint.ConstraintLayout>
+
+
 
 
 </LinearLayout>

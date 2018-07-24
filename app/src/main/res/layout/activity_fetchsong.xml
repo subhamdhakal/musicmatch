@@ -12,17 +12,21 @@
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/piss_yellow_background"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:context=".ui.activity.fetchsong">
 
         <TextView
             android:id="@+id/foundTextView"
             android:layout_width="match_parent"
+            android:textColor="@color/whiteOpacity"
             android:layout_height="40dp"
             android:textSize="16dp" />
 
@@ -30,18 +34,21 @@
         <TextView
             android:id="@+id/nameTextView"
             android:layout_width="match_parent"
+            android:textColor="@color/whiteOpacity"
             android:layout_height="40dp"
             android:textSize="25dp" />
 
         <TextView
             android:id="@+id/artistTextView"
             android:layout_width="match_parent"
+            android:textColor="@color/whiteOpacity"
             android:layout_height="40dp"
             android:textSize="25dp" />
 
         <TextView
             android:id="@+id/genreTextView"
             android:layout_width="match_parent"
+            android:textColor="@color/whiteOpacity"
             android:layout_height="40dp"
             android:textSize="25dp" />
 
@@ -64,13 +71,16 @@
         android:id="@+id/imageView_rotate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/music_match" />
+
 </android.support.constraint.ConstraintLayout>
